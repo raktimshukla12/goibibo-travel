@@ -2,13 +2,12 @@ package com.devops.src.util;
 
 import java.io.IOException;
 
-import junit.framework.Assert;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 
 public class Utils {
@@ -81,7 +80,7 @@ public class Utils {
 		driver.findElement(ORFileReader.findValue("return_calendar")).click();
 	}
 	public static void assertExistence (String Message, String assertText, WebDriver driver) {
-		Assert.assertTrue(Message, driver.findElement(ORFileReader.findValue(assertText)).isDisplayed());
+		Assert.assertTrue(driver.findElement(ORFileReader.findValue(assertText)).isDisplayed(), Message);
 	}
 	public static void searchText (WebDriver driver) {
 		driver.findElement(ORFileReader.findValue("search_btn")).click();
