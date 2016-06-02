@@ -54,6 +54,6 @@ public class Payment {
 
 	@AfterClass
 	public void testEnd() {
-		driver.quit();
+		driver.quit(); 
 	}
 }

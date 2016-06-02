@@ -14,7 +14,7 @@ public class Utils {
 	
 	@BeforeSuite
 	public static void read (WebDriver driver) throws IOException {
-		ORFileReader.loadObjects("Main");
+		ORFileReader.loadObjects("Home");
 		ORFileReader.loadObjects("Booking");
 		ORFileReader.loadObjects("Payment");
 		driver.get(Constants.LOCALURL);

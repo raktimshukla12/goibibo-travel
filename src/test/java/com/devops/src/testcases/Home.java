@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.devops.src.util.Constants;
 import com.devops.src.util.Utils;
 
-public class Main {
+public class Home {
 	static WebDriver driver;
 
 	@Parameters({ "browser" })
@@ -29,7 +29,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -43,7 +43,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -57,7 +57,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -70,7 +70,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -83,7 +83,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -95,7 +95,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not on Search Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
 	}
 
 	@Test
@@ -109,7 +109,7 @@ public class Main {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is on Search Page", "book_dest_page" ,driver);
+		Utils.assertExistence("User is not able to navigate", "book_dest_page" ,driver);
 	}
 	
 	@AfterClass
