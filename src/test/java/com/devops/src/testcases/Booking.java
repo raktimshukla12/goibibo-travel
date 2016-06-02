@@ -1,7 +1,7 @@
 package com.devops.src.testcases;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -55,7 +55,7 @@ public class Booking {
 		Utils.assertExistence("User is not on Book Page", "book_image" ,driver);
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void testEnd() {
 		driver.quit();
 	}

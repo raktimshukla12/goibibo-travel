@@ -1,7 +1,7 @@
 package com.devops.src.testcases;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -112,7 +112,7 @@ public class Main {
 		Utils.assertExistence("User is on Search Page", "book_dest_page" ,driver);
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void testEnd() {
 		driver.quit();
 	}
