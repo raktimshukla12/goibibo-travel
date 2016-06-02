@@ -29,7 +29,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -43,7 +43,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -57,7 +57,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -70,7 +70,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -83,7 +83,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -95,7 +95,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label" ,driver);
+		Utils.assertExistence("User is navigated to incorrect Page", "search_page_label", driver);
 	}
 
 	@Test
@@ -109,7 +109,7 @@ public class Home {
 		Utils.returnCalendar(driver);
 		Utils.searchText(driver);
 		Utils.waitInSec(Constants.FIVE_WAIT);
-		Utils.assertExistence("User is not able to navigate", "book_dest_page" ,driver);
+		Utils.assertExistence("User is not able to navigate", "book_dest_page", driver);
 	}
 	
 	@AfterClass

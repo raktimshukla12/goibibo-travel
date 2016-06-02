@@ -35,9 +35,7 @@ public class Utils {
         }
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
-    }
-	
-	
+    }	
 	
 	public static void navigateTo(WebDriver driver) {
         driver.navigate().to("https://www.goibibo.com/");
