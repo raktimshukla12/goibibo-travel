@@ -10,28 +10,26 @@
 			<parameter name="priority" value="major" />
 		</parameters>
 		<classes>
-			<class name="com.devops.src.testcases.Main">
+			<class name="com.devops.src.testcases.Home">
 				<methods>
-					<include name="Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
-					<include name="Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" /> 
-					<include name="Main_Click_SignIn_Enter_Valid_Email_Empty_Password_Click_SignIn_Button_ValidateFunctionality" />
-					<include name="Main_Click_SignUp_Enter_Valid_Email_Valid_Choose_Password_Valid_HomeCity_Click_CreateAccount_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" />
+					<include name="Home_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality" /> 
 				</methods>
 			</class>
-			<class name="com.devops.src.testcases.Booking">
+			<class name="com.devops.src.testcases.FlightSearchResult">
 				<methods>
-					<include name="FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality" />
-					<include name="FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality" />
+					<include name="FlightSearchResult_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality" />
+					<include name="FlightSearchResult_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality" />
 				</methods>
 			</class>
-			<class name="com.devops.src.testcases.Payment">
+			<class name="com.devops.src.testcases.FlightBooking">
 				<methods>
-					<include name="Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality" />	
+					<include name="FlightBooking_Traveller_Details_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality" />	
 				</methods>
 			</class> 		
 		</classes>
