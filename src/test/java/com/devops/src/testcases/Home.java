@@ -20,7 +20,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.clearInput(driver);
 		Utils.invalidSource(driver);
@@ -33,7 +33,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
@@ -47,7 +47,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
@@ -61,7 +61,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
@@ -74,7 +74,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
@@ -87,7 +87,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
+	public void Home_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
@@ -99,7 +99,7 @@ public class Home {
 	}
 
 	@Test
-	public void Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality ()
+	public void Home_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality ()
 			throws InterruptedException {
 		Utils.navigateTo(driver);
 		Utils.clearInput(driver);
