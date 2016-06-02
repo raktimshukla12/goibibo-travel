@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 186.15 sec <<< FAILURE!
+Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(com.devops.src.testcases.Main)  Time elapsed: 7.428 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:73)
+
+Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(com.devops.src.testcases.Main)  Time elapsed: 7.621 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:86)
+
+Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(com.devops.src.testcases.Main)  Time elapsed: 22.192 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:98)
+

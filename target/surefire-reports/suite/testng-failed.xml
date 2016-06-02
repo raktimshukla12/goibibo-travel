@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="nodeURl" value=""/>
+  <parameter name="priority" value="major"/>
+  <parameter name="platform" value="windows"/>
+  <test name="Main_Windows_FF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="nodeURl" value=""/>
+    <parameter name="priority" value="major"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="com.devops.src.testcases.Booking">
+        <methods>
+          <include name="testRead"/>
+          <include name="testEnd"/>
+        </methods>
+      </class> <!-- com.devops.src.testcases.Booking -->
+      <class name="com.devops.src.testcases.Payment">
+        <methods>
+          <include name="testEnd"/>
+          <include name="testRead"/>
+        </methods>
+      </class> <!-- com.devops.src.testcases.Payment -->
+      <class name="com.devops.src.testcases.Main">
+        <methods>
+          <include name="Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality"/>
+          <include name="Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality"/>
+          <include name="Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality"/>
+          <include name="testEnd"/>
+          <include name="testRead"/>
+        </methods>
+      </class> <!-- com.devops.src.testcases.Main -->
+    </classes>
+  </test> <!-- Main_Windows_FF(failed) -->
+</suite> <!-- Failed suite [suite] -->

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite">
+              <span class="suite-name border-failed">suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite">
+                    <span>E:\DefectViewSystem\goibibo-travel\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite" class="hide-methods failed suite-suite"> (hide)</a> <!-- hide-methods failed suite-suite -->
+                      <a href="#" panel-name="suite-suite" class="show-methods failed suite-suite"> (show)</a> <!-- show-methods failed suite-suite -->
+                    </span>
+                    <div class="method-list-content failed suite-suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite" class="hide-methods passed suite-suite"> (hide)</a> <!-- hide-methods passed suite-suite -->
+                      <a href="#" panel-name="suite-suite" class="show-methods passed suite-suite"> (show)</a> <!-- show-methods passed suite-suite -->
+                    </span>
+                    <div class="method-list-content passed suite-suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Booking" hash-for-method="FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality">FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Booking" hash-for-method="FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality">FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Main" hash-for-method="Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.devops.src.testcases.Payment" hash-for-method="Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality">Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite" class="panel suite">
+          <div class="suite-suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.devops.src.testcases.Main</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:98)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:73)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: User is not on Search Page
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.devops.src.util.Utils.assertExistence(Utils.java:84)
+	at com.devops.src.testcases.Main.Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality(Main.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-failed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.devops.src.testcases.Booking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality">
+                  </a> <!-- FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality -->
+                  <span class="method-name">FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.devops.src.testcases.Payment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality">
+                  </a> <!-- Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality -->
+                  <span class="method-name">Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.devops.src.testcases.Main</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality">
+                  </a> <!-- Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality -->
+                  <span class="method-name">Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
+        </div> <!-- panel suite -->
+        <div panel-name="test-xml-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\DefectViewSystem\goibibo-travel\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Main_Windows_FF&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;nodeURl&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;priority&quot; value=&quot;major&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;windows&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.devops.src.testcases.Main&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Click_SignIn_Enter_Valid_Email_Empty_Password_Click_SignIn_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;Main_Click_SignUp_Enter_Valid_Email_Valid_Choose_Password_Valid_HomeCity_Click_CreateAccount_Button_ValidateFunctionality&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.devops.src.testcases.Main --&gt;
+      &lt;class name=&quot;com.devops.src.testcases.Booking&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality&quot;/&gt;
+          &lt;include name=&quot;FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.devops.src.testcases.Booking --&gt;
+      &lt;class name=&quot;com.devops.src.testcases.Payment&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.devops.src.testcases.Payment --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Main_Windows_FF --&gt;
+&lt;/suite&gt; &lt;!-- suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Main_Windows_FF (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite');
+function tableData_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality')
+data.setCell(0, 2, 'com.devops.src.testcases.Payment')
+data.setCell(0, 3, 28883);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality')
+data.setCell(1, 2, 'com.devops.src.testcases.Booking')
+data.setCell(1, 3, 28246);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(2, 2, 'com.devops.src.testcases.Main')
+data.setCell(2, 3, 22192);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(3, 2, 'com.devops.src.testcases.Main')
+data.setCell(3, 3, 14012);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(4, 2, 'com.devops.src.testcases.Main')
+data.setCell(4, 3, 9641);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(5, 2, 'com.devops.src.testcases.Main')
+data.setCell(5, 3, 8961);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality')
+data.setCell(6, 2, 'com.devops.src.testcases.Booking')
+data.setCell(6, 3, 8776);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(7, 2, 'com.devops.src.testcases.Main')
+data.setCell(7, 3, 8378);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(8, 2, 'com.devops.src.testcases.Main')
+data.setCell(8, 3, 7622);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality')
+data.setCell(9, 2, 'com.devops.src.testcases.Main')
+data.setCell(9, 3, 7421);
+window.suiteTableData['suite']= { tableData: data, tableDiv: 'times-div-suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-suite">
+              </div> <!-- times-div-suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Booking</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testRead(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Main</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testRead(firefox)</span>
+                <span class="method-start">20485 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Payment</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testRead(firefox)</span>
+                <span class="method-start">30350 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Main</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Main_Enter_Invalid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">39565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Main_Enter_Valid_Source_Invalid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">53577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Main_Enter_InValid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">63219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Main_Enter_Empty_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">72180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Main_Enter_Valid_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">79607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Main_Enter_Empty_Source_Empty_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">87230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Main_Enter_Valid_Source_Valid_Destination_Select_Departure_Date_Return_Date_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">109422 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Booking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FlightBooking_Select_Lowest_ArrivalFare_Lowest_DepartureFare_Click_Book_Button_ValidateFunctionality</span>
+                <span class="method-start">117801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FlightBooking_Enter_Empty_Source_Empty_Destination_Select_DepartureDate_ReturnDate_Click_Search_Button_ValidateFunctionality</span>
+                <span class="method-start">146048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Payment</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Payment_Select_UserTitle_Input_AdultName_Fields_EmailAddress_MobileNumber_Click_MakePayment_Button_ValidateFunctionality</span>
+                <span class="method-start">154825 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Booking</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">183708 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Main</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">184785 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.devops.src.testcases.Payment</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">185484 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
