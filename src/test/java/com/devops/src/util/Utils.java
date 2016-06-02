@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeSuite;
 public class Utils {
 	
 	@BeforeSuite
-	public static void read (WebDriver driver) throws IOException {
+	public static void load (WebDriver driver) throws IOException {
 		ORFileReader.loadObjects("Home");
 		ORFileReader.loadObjects("FlightSearchResult");
 		ORFileReader.loadObjects("FlightBooking");

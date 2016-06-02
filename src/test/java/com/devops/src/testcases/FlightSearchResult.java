@@ -20,7 +20,7 @@ public class FlightSearchResult {
 	@BeforeTest
 	public void testRead(String browser) throws Exception {
 		driver = Utils.getDriver(browser);
-		Utils.read(driver);
+		Utils.load(driver);
 	}
 	
 	@Test
